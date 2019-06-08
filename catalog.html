@@ -23,7 +23,7 @@
       </a>
       <!-- Задание 4. Добавлено aria-поле для ссылки -->
       <!-- Задание 4. Добавлена форма -->
-      <form class="form-search" action="https://echo.htmlacademy.ru">
+      <form class="form-search" action="https://echo.htmlacademy.ru" method="GET">
         <p class="form-paragraph">
           <label class="visually-hidden" for="search-field">Поле поиска</label>
           <input class="form-search-input" type="search" name="search" id="search-field" placeholder="Поиск">
@@ -98,34 +98,34 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
       <!-- Задание 4. Добавлена форма для фильтров -->
-      <form class="filters-form" action="https://echo.htmlacademy.ru">
+      <form class="filters-form" action="https://echo.htmlacademy.ru" method="GET">
         <!-- Место для диапазона цен. Бонусное задание. Сделаю после основного -->
         <p class="filter-type">Фильтр:</p>
         <!-- Место для диапазона цен. Бонусное задание. Сделаю после основного -->
-        <fieldset class="filters-divide">
+        <fieldset class="filters-group">
           <legend>Производители:</legend>
           <p class="filters-paragraph">
-            <input class="filters-input brand-input" type="checkbox" name="bosch" id="bosch-checkbox">
+            <input class="filters-input brand-input" type="checkbox" value="checkbox-bosch" name="bosch" id="bosch-checkbox">
             <label for="bosch-checkbox">Bosch</label>
           </p>
           <p class="filters-paragraph">
-            <input class="filters-input brand-input" type="checkbox" name="interscol" id="interscol-checkbox">
+            <input class="filters-input brand-input" type="checkbox" value="checkbox-interscol" name="interscol" id="interscol-checkbox">
             <label for="interscol-checkbox">Интерскол</label>
           </p>
           <p class="filters-paragraph">
-            <input class="filters-input brand-input" type="checkbox" name="makita" id="makita-checkbox">
+            <input class="filters-input brand-input" type="checkbox" value="checkbox-makita" name="makita" id="makita-checkbox">
             <label for="makita-checkbox">Makita</label>
           </p>
           <p class="filters-paragraph">
-            <input class="filters-input brand-input" type="checkbox" name="dewalt" id="dewalt-checkbox">
+            <input class="filters-input brand-input" type="checkbox" value="checkbox-dewalt" name="dewalt" id="dewalt-checkbox">
             <label for="dewalt-checkbox">Dewalt</label>
           </p>
           <p class="filters-paragraph">
-            <input class="filters-input brand-input" type="checkbox" name="hitachi" id="hitachi-checkbox">
+            <input class="filters-input brand-input" type="checkbox" value="checkbox-hitachi" name="hitachi" id="hitachi-checkbox">
             <label for="hitachi-checkbox">Hitachi</label>
           </p>
         </fieldset>
-        <fieldset class="filters-divide">
+        <fieldset class="filters-group">
           <legend>Питание:</legend>
           <p class="filters-paragraph">
             <input class="filters-input battery-type-input" type="radio" name="battery-type" value="battery" id="battery-type-field">
@@ -367,18 +367,18 @@
       <ul class="footer-social-list">
         <!-- Задание 4. Добавлены aria-поля для ссылок -->
         <li>
-          <a class="vkontact" href="vk.com" aria-label="На вконтакте"></a>
+          <a class="vkontact" href="vk.com" aria-label="На вконтакте">Вконтакте</a>
         </li>
         <li>
-          <a class="facebook" href="facebook.com" aria-label="На фейсбук"></a>
+          <a class="facebook" href="facebook.com" aria-label="На фейсбук">Фейсбук</a>
         </li>
         <li>
-          <a class="instagram" href="instagram.com" aria-label="На инстаграм"></a>
+          <a class="instagram" href="instagram.com" aria-label="На инстаграм">Инстаграм</a>
         </li>
         <!-- Задание 4. Добавлены aria-поля для ссылок -->
       </ul>
       <div class="developers">
-        <p>Обратная связь: <a class="dev-mail" href="mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p>Обратная связь: <a class="dev-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
         <p>Разработано — <a class="dev-contact" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
     </section>
@@ -392,7 +392,7 @@
       <a class="btn more-btn" href="basket.html">Оформить заказ</a>
       <button class="btn continue-btn" type="button">Продолжить покупки</button>
     </div>
-    <button class="close-btn" type="button" aria-label="Закрыть модальное окно"></button>
+    <button class="close-btn" type="button">Закрыть модальное окно</button>
   </section>
   <!-- Задание 4. Добалено окно уведомлений -->
 
