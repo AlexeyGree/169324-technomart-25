@@ -99,55 +99,56 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
       <form class="filters-form" action="https://echo.htmlacademy.ru" method="GET">
-        <p class="filter-type">Фильтр:</p>
+        <p class="filter-type-bg filter-type">Фильтр:</p>
 
         <fieldset class="filters-group">
           <legend>Цена:</legend>
 
-          <p class="price-range-container">
+          <p class="filter-type-bg price-range-container">
             <span class="price-range-control price-range-left">X</span>
             <span class="price-range-control price-range-right">X</span>
           </p>
           <p class="price-range-paragraph">
             <label class="visually-hidden" for="min-price-field">Минимальная цена</label>
-            <input class="price-range-input price-range-min" type="text" name="min-price" id="min-price-field">
+            <input class="filter-type-bg price-range-input price-range-min" type="text" name="min-price" value="0" id="min-price-field">
           </p>
+          <span>-</span>
           <p class="price-range-paragraph">
             <label class="visually-hidden" for="max-price-field">Максимальная цена</label>
-            <input class="price-range-input price-range-max" type="text" name="max-price" id="max-price-field">
+            <input class="filter-type-bg price-range-input price-range-max" type="text" name="max-price" value="30000" id="max-price-field">
           </p>
         </fieldset>
         <fieldset class="filters-group">
           <legend>Производители:</legend>
           <p class="filters-paragraph">
-            <input class="filters-input brand-input" type="checkbox" value="checkbox-bosch" name="bosch" id="bosch-checkbox">
+            <input class="visually-hidden brand-input" type="checkbox" value="checkbox-bosch" name="bosch" id="bosch-checkbox">
             <label for="bosch-checkbox">Bosch</label>
           </p>
           <p class="filters-paragraph">
-            <input class="filters-input brand-input" type="checkbox" value="checkbox-interscol" name="interscol" id="interscol-checkbox">
+            <input class="visually-hidden brand-input" type="checkbox" value="checkbox-interscol" name="interscol" id="interscol-checkbox">
             <label for="interscol-checkbox">Интерскол</label>
           </p>
           <p class="filters-paragraph">
-            <input class="filters-input brand-input" type="checkbox" value="checkbox-makita" name="makita" id="makita-checkbox">
+            <input class="visually-hidden brand-input" type="checkbox" value="checkbox-makita" name="makita" id="makita-checkbox">
             <label for="makita-checkbox">Makita</label>
           </p>
           <p class="filters-paragraph">
-            <input class="filters-input brand-input" type="checkbox" value="checkbox-dewalt" name="dewalt" id="dewalt-checkbox">
+            <input class="visually-hidden brand-input" type="checkbox" value="checkbox-dewalt" name="dewalt" id="dewalt-checkbox">
             <label for="dewalt-checkbox">Dewalt</label>
           </p>
           <p class="filters-paragraph">
-            <input class="filters-input brand-input" type="checkbox" value="checkbox-hitachi" name="hitachi" id="hitachi-checkbox">
+            <input class="visually-hidden brand-input" type="checkbox" value="checkbox-hitachi" name="hitachi" id="hitachi-checkbox">
             <label for="hitachi-checkbox">Hitachi</label>
           </p>
         </fieldset>
         <fieldset class="filters-group">
           <legend>Питание:</legend>
           <p class="filters-paragraph">
-            <input class="filters-input battery-type-input" type="radio" name="battery-type" value="battery" id="battery-type-field">
+            <input class="visually-hidden battery-type-input" type="radio" name="battery-type" value="battery" id="battery-type-field">
             <label for="battery-type-field">Аккумуляторные</label>
           </p>
           <p class="filters-paragraph">
-            <input class="filters-input battery-type-input" type="radio" name="battery-type" value="networked" id="battery-type-field">
+            <input class="visually-hidden battery-type-input" type="radio" name="battery-type" value="networked" id="battery-type-field">
             <label for="battery-type-field">Сетевые</label>
           </p>
         </fieldset>
@@ -157,33 +158,33 @@
 
     <section class="catalog">
       <h2 class="visually-hidden">Каталог товаров</h2>
-      <form class="sort-form" action="https://echo.htmlacademy.ru" method="GET">
+      <form class="filter-type-bg sort-form" action="https://echo.htmlacademy.ru" method="GET">
         <p class="filter-type">Сортировка:</p>
 
         <fieldset class="sort-group">
           <legend class="visually-hidden">Вид сортировки</legend>
           <p class="sort-paragraph">
             <label for="price-sort-field">По цене</label>
-            <input class="sort-radio" type="radio" name="goods-sort" value="price" id="price-sort-field">
+            <input class="visually-hidden sort-radio" type="radio" name="goods-sort" value="price" id="price-sort-field">
           </p>
           <p class="sort-paragraph">
             <label for="type-sort-field">По типу</label>
-            <input class="sort-radio" type="radio" name="goods-sort" value="type" id="type-sort-field">
+            <input class="visually-hidden sort-radio" type="radio" name="goods-sort" value="type" id="type-sort-field">
           </p>
           <p class="sort-paragraph">
             <label for="functional-sort-field">По цене</label>
-            <input class="sort-radio" type="radio" name="goods-sort" value="functional" id="functional-sort-field">
+            <input class="visually-hidden sort-radio" type="radio" name="goods-sort" value="functional" id="functional-sort-field">
           </p>
         </fieldset>
         <fieldset class="sort-group">
           <legend class="visually-hidden">Сортировка по возрастанию</legend>
           <p class="sort-paragraph">
             <label for="min-sort-field">От меньшего к большему</label>
-            <input class="sort-ascending sort-min" type="radio" name="ascending-sort" value="min" id="min-sort-field">
+            <input class="visually-hidden sort-ascending sort-min" type="radio" name="ascending-sort" value="min" id="min-sort-field">
           </p>
           <p class="sort-paragraph">
             <label for="max-sort-field">От меньшего к большему</label>
-            <input class="sort-ascending sort-max" type="radio" name="ascending-sort" value="max" id="max-sort-field">
+            <input class="visually-hidden sort-ascending sort-max" type="radio" name="ascending-sort" value="max" id="max-sort-field">
           </p>
         </fieldset>
       </form>
